@@ -1,0 +1,119 @@
+.main-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(160, 158, 158, 0.76);
+    padding: 20px;
+}
+.main-navigation__logo-image{
+    width: 70px;
+    margin-right: 20px;
+}
+@media(max-width: 991px){
+    .main-navigation__logo-image{
+        width: 40px;
+        margin-right: 10px;
+    }
+}
+.main-navigation__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+.main-navigation__logo{
+    text-decoration: none;
+    color: seashell;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+}
+@media(max-width: 991px){
+    .main-navigation__logo{
+        font-size: 15px;
+    }
+}
+.main-navigation__menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s;
+    transition-property: opacity, transform,0;
+}
+@media(max-width: 991px){
+    .main-navigation__menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+}
+@media (max-width: 991px) {
+    .main-navigation__menu--open{
+ 
+        opacity: 1;
+        pointer-events: unset;
+        transform: unset;
+    }
+}
+.main-navigation__menu-item{
+    margin-left: 30px;
+    padding: 5px 0;
+}
+@media (max-width: 1024px){
+    .main-navigation__menu-item{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 991px){
+    .main-navigation__menu-item{
+        margin-left: 0;
+    }
+}
+.main-navigation__menu-item:hover{
+    border-bottom: solid 2px whitesmoke;
+}
+@media(max-width: 991px){
+    .main-navigation__menu-iten:hover{
+        border-bottom: unset;
+    }
+}
+.main-navigation__link{
+    text-decoration: none;
+    color: seashell;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media(max-width: 991px){
+    .main-navigation__link{
+        font-size: 22px;
+    }
+}
+.main-navigation__mobile-button{
+    display: none;
+}
+@media(max-width: 991px){
+    .main-navigation__mobile-button{
+        display: unset;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+}
+@media(max-width: 991px){
+    .main-navigation__mobile-button-image{
+        width: 25px;
+        display: block;
+    }
+}
